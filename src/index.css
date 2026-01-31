@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+@import "@fontsource/ibm-plex-mono/600.css";
+@import "@fontsource/source-serif-4/400.css";
+@import "@fontsource/source-serif-4/600.css";
+
+/* Classic Developer Portfolio Design System
+   Inspired by minimal, text-focused academic portfolios
+   Typography: IBM Plex Mono (headings/code) + Source Serif 4 (body)
+   Colors: Warm off-white, charcoal text, terracotta accent
+*/
+
+@layer base {
+  :root {
+    /* Core palette - warm, classic tones */
+    --background: 40 20% 98%;
+    --foreground: 220 15% 20%;
+
+    --card: 40 20% 98%;
+    --card-foreground: 220 15% 20%;
+
+    --popover: 40 20% 98%;
+    --popover-foreground: 220 15% 20%;
+
+    /* Terracotta/rust accent - the signature color */
+    --primary: 15 65% 45%;
+    --primary-foreground: 40 20% 98%;
+
+    --secondary: 40 15% 94%;
+    --secondary-foreground: 220 15% 25%;
+
+    --muted: 40 10% 92%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 160 35% 40%;
+    --accent-foreground: 40 20% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 20% 98%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 15 65% 45%;
+
+    --radius: 0.25rem;
+
+    /* Typography */
+    --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+    --font-serif: "Source Serif 4", Georgia, serif;
+
+    /* Sidebar tokens */
+    --sidebar-background: 40 20% 96%;
+    --sidebar-foreground: 220 15% 25%;
+    --sidebar-primary: 15 65% 45%;
+    --sidebar-primary-foreground: 40 20% 98%;
+    --sidebar-accent: 40 15% 92%;
+    --sidebar-accent-foreground: 220 15% 25%;
+    --sidebar-border: 40 15% 88%;
+    --sidebar-ring: 15 65% 45%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 40 15% 92%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 40 15% 92%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 40 15% 92%;
+
+    --primary: 15 55% 55%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 15% 88%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 40 10% 60%;
+
+    --accent: 160 35% 50%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 40 20% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 15 55% 55%;
+
+    --sidebar-background: 220 20% 8%;
+    --sidebar-foreground: 40 15% 88%;
+    --sidebar-primary: 15 55% 55%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 15% 15%;
+    --sidebar-accent-foreground: 40 15% 88%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 15 55% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-serif);
+    line-height: 1.75;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+
+  code, pre, .mono {
+    font-family: var(--font-mono);
+  }
+
+  /* Classic underlined links */
+  a.text-link {
+    @apply text-primary underline underline-offset-2 decoration-primary/40 
+           hover:decoration-primary transition-colors;
+  }
+
+  /* Section titles like in reference */
+  .section-title {
+    @apply text-primary font-mono text-2xl md:text-3xl font-medium mb-8;
+  }
+}
