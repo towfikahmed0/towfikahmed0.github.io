@@ -255,7 +255,8 @@
         }
 
         /* Projects & Writings Sections */
-        .projects, .writings {
+        .projects,
+        .writings {
             background-color: #f9f9f9;
             border-top: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
@@ -266,13 +267,15 @@
             border-top: none;
         }
 
-        .projects-grid, .writings-grid {
+        .projects-grid,
+        .writings-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2.5rem;
         }
 
-        .project-card, .writing-card {
+        .project-card,
+        .writing-card {
             background-color: var(--white);
             border-radius: 2px;
             overflow: hidden;
@@ -283,30 +286,35 @@
             flex-direction: column;
         }
 
-        .project-card:hover, .writing-card:hover {
+        .project-card:hover,
+        .writing-card:hover {
             transform: translateY(-5px);
             box-shadow: var(--shadow);
         }
 
-        .project-image, .writing-image {
+        .project-image,
+        .writing-image {
             width: 100%;
             height: 180px;
             object-fit: cover;
             border-bottom: 1px solid var(--border-color);
         }
 
-        .project-info, .writing-info {
+        .project-info,
+        .writing-info {
             padding: 1.8rem;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
 
-        .project-info h3, .writing-info h3 {
+        .project-info h3,
+        .writing-info h3 {
             margin-bottom: 0.8rem;
         }
 
-        .project-info p, .writing-info p {
+        .project-info p,
+        .writing-info p {
             margin-bottom: 1.5rem;
             flex-grow: 1;
             font-size: 1rem;
@@ -314,7 +322,8 @@
             color: var(--light-text);
         }
 
-        .project-links, .writing-links {
+        .project-links,
+        .writing-links {
             display: flex;
             gap: 1rem;
             margin-top: auto;
@@ -442,8 +451,9 @@
             .container {
                 padding: 0 1.5rem;
             }
-            
-            .projects-grid, .writings-grid {
+
+            .projects-grid,
+            .writings-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -501,29 +511,36 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a dedicated student with a strong interest in learning and intellectual growth. My academic focus lies primarily in science, and I enjoy exploring subjects that encourage critical thinking and curiosity, including literature, history, and technology.
-                        I value discipline, consistency, and self-improvement, and I strive to develop both my analytical skills and communication abilities. With a keen interest in understanding how ideas shape the world,
-                        I am continuously working to broaden my knowledge and refine my skills for future academic and professional pursuits.</p>
+                    <p>I am a dedicated student with a strong interest in learning and intellectual growth. My academic
+                        focus lies primarily in science, and I enjoy exploring subjects that encourage critical thinking
+                        and curiosity, including literature, history, and technology.
+                        I value discipline, consistency, and self-improvement, and I strive to develop both my
+                        analytical skills and communication abilities. With a keen interest in understanding how ideas
+                        shape the world,
+                        I am continuously working to broaden my knowledge and refine my skills for future academic and
+                        professional pursuits.</p>
 
-                   <div class="education">
-    <h4>Education</h4>
+                    <div class="education">
+                        <h4>Education</h4>
 
-    <p>
-        <strong>Higher Secondary Certificate (HSC)</strong><br>
-        BAF Shaheen College, Dhaka <br>
-        <span class="edu-year">2025 – 2026</span>
-    </p>
+                        <p>
+                            <strong>Higher Secondary Certificate (HSC)</strong><br>
+                            BAF Shaheen College, Dhaka <br>
+                            <span class="edu-year">2025 – 2026</span>
+                        </p>
 
-    <p>
-        <strong>Secondary School Certificate (SSC)</strong><br>
-        United Islamia Government High School, Madaripur <br>
-        <span class="edu-year">2018 – 2024</span>
-    </p>
-</div>
+                        <p>
+                            <strong>Secondary School Certificate (SSC)</strong><br>
+                            United Islamia Government High School, Madaripur <br>
+                            <span class="edu-year">2018 – 2024</span>
+                        </p>
+                    </div>
 
                 </div>
                 <div class="about-image">
-                    <img class="profile-img" src="https://i.pinimg.com/736x/f8/f3/3d/f8f33dfcca974b97e011bff80fa75d1f.jpg" alt="Towfik Ahmed Razin">
+                    <img class="profile-img"
+                        src="https://i.pinimg.com/736x/f8/f3/3d/f8f33dfcca974b97e011bff80fa75d1f.jpg"
+                        alt="Towfik Ahmed Razin">
                 </div>
             </div>
         </div>
@@ -535,6 +552,21 @@
             <h2>My Projects</h2>
             <div class="projects-grid">
                 <!-- Featured Project -->
+                <div class="project-card">
+                    <!-- <img class="project-image"
+        src="https://raw.githubusercontent.com/towfikahmed0/Bornopath/refs/heads/main/screenshot/page(2).png"
+        alt="Bornopath Project Screenshot"> -->
+                    <div class="project-info">
+                        <h3>My Lib</h3>
+                        <p>A modern personal library manager and PWA featuring Google Gemini AI for book insights,
+                            QR/ISBN scanning, and real-time Firebase synchronization.</p>
+                        <div class="project-links">
+                            <a href="https://mylib.kinsta.page/" class="btn" target="_blank">Visit</a>
+                            <a href="https://github.com/towfikahmed0/mylib" class="btn btn-outline"
+                                target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="project-card">
                     <!-- <img class="project-image"
                         src="https://raw.githubusercontent.com/towfikahmed0/Bornopath/refs/heads/main/screenshot/page(2).png"
@@ -586,7 +618,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Writings Section -->
     <section id="writings" class="writings">
         <div class="container">
@@ -598,7 +630,8 @@
                         alt="Science Behind Sleep"> -->
                     <div class="writing-info">
                         <h3>ঘুমের পেছনের বিজ্ঞান - ট্যকিয়ন</h3>
-                        <p>ঘুম আমাদের দৈনন্দিন জীবনের একটি গুরুত্বপূর্ণ অংশ। আমরা দিনের এক-তৃতীয়াংশ সময় ঘুমিয়েই কাটাই।
+                        <p>ঘুম আমাদের দৈনন্দিন জীবনের একটি গুরুত্বপূর্ণ অংশ। আমরা দিনের এক-তৃতীয়াংশ সময় ঘুমিয়েই
+                            কাটাই।
                             সঠিক সময়ে পর্যাপ্ত পরিমাণ ও মানসম্পন্ন ঘুম খাদ্য বা পানির মতই অপরিহার্য।...</p>
                         <div class="writing-links">
                             <a href="https://www.tachyonts.com/2025/08/02/science-behind-sleep/" class="btn"
@@ -606,7 +639,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- You can add more writing cards here in the future -->
             </div>
         </div>
@@ -617,7 +650,7 @@
         <div class="container">
             <h2>Get In Touch</h2>
             <div class="contact-content">
-                
+
                 <p>Email: <a href="mailto:towfikahmedrazin@gmail.com">towfikahmedrazin@gmail.com</a></p>
                 <div class="social-links">
                     <a href="http://facebook.com/towfikahmed07" class="social-link" target="_blank">
@@ -673,7 +706,7 @@
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-links a');
             let current = '';
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
@@ -681,7 +714,7 @@
                     current = section.getAttribute('id');
                 }
             });
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href').substring(1) === current) {
@@ -691,10 +724,10 @@
         });
 
         // Set active link on page load
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const navLinks = document.querySelectorAll('.nav-links a');
             const currentHash = window.location.hash || '#home';
-            
+
             navLinks.forEach(link => {
                 link.classList.remove('active');
                 if (link.getAttribute('href') === currentHash) {
